@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Button Style -->
+    <style name="Widget.AlfauzanData.Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:minHeight">@dimen/btn_height</item>
+        <item name="android:paddingStart">@dimen/spacing_lg</item>
+        <item name="android:paddingEnd">@dimen/spacing_lg</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- EditText Style -->
+    <style name="Widget.AlfauzanData.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:textColor">@color/textDark</item>
+        <item name="android:textColorHint">@color/textHint</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:paddingStart">@dimen/input_padding_h</item>
+        <item name="android:paddingEnd">@dimen/input_padding_h</item>
+        <item name="android:paddingTop">@dimen/input_padding_v</item>
+        <item name="android:paddingBottom">@dimen/input_padding_v</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="Widget.AlfauzanData.Card" parent="android:Widget">
+        <item name="android:background">@drawable/bg_glass_card</item>
+        <item name="android:elevation">@dimen/elevation_card</item>
+        <item name="android:padding">@dimen/card_padding</item>
+    </style>
+
+    <!-- Fingerprint Button Style -->
+    <style name="Widget.AlfauzanData.FingerprintButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bg_fingerprint_circle</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="Widget.AlfauzanData.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/transparent</item>
+        <item name="titleTextColor">@color/textPrimary</item>
+    </style>
+</resources>

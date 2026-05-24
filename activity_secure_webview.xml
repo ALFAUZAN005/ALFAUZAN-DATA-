@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navyDeep">
+
+    <!-- Top Toolbar -->
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/navyDeep"
+        android:paddingStart="8dp"
+        android:paddingEnd="16dp">
+
+        <ImageButton
+            android:id="@+id/btnWebBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back"
+            android:padding="8dp"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/textPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.06" />
+
+        <ImageButton
+            android:id="@+id/btnLogout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_logout"
+            android:padding="8dp"
+            android:contentDescription="Logout" />
+
+    </RelativeLayout>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/webProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/toolbar"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/royalBlueBright"
+        android:progressBackgroundTint="@color/navyMid"
+        android:visibility="gone" />
+
+    <!-- Swipe Refresh + WebView -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <WebView
+            android:id="@+id/secureWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Offline Error UI -->
+    <LinearLayout
+        android:id="@+id/offlineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="40dp"
+        android:background="@color/navyDark"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_no_internet"
+            android:contentDescription="No internet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/no_internet"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/no_internet_msg"
+            android:textColor="@color/textSecondary"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.4" />
+
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/ripple_button"
+            android:text="@string/btn_retry"
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+</RelativeLayout>

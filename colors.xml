@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Palette -->
+    <color name="colorPrimary">#0A1628</color>
+    <color name="colorPrimaryDark">#060E1A</color>
+    <color name="colorAccent">#1A5FD4</color>
+
+    <!-- Dark Navy Blues -->
+    <color name="navyDeep">#060E1A</color>
+    <color name="navyDark">#0A1628</color>
+    <color name="navyMid">#0D1F3C</color>
+    <color name="navyLight">#112347</color>
+
+    <!-- Royal Blues -->
+    <color name="royalBlue">#1A5FD4</color>
+    <color name="royalBlueDark">#1248A8</color>
+    <color name="royalBlueLight">#2B72E8</color>
+    <color name="royalBlueBright">#3D85F5</color>
+
+    <!-- Accent / Neon Glow -->
+    <color name="neonBlue">#4D9FFF</color>
+    <color name="glowBlue">#1A5FD4</color>
+
+    <!-- Glass / Cards -->
+    <color name="glassBg">#1A2A4A</color>
+    <color name="glassStroke">#2B4A8A</color>
+    <color name="cardBg">#FFFFFF</color>
+    <color name="cardBgDark">#F0F4FF</color>
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#B0C4DE</color>
+    <color name="textHint">#6B8CAE</color>
+    <color name="textDark">#0A1628</color>
+    <color name="textMuted">#8BA3C1</color>
+    <color name="textNavy">#0D1F3C</color>
+    <color name="textBlue">#1A5FD4</color>
+
+    <!-- Status Colors -->
+    <color name="colorSuccess">#00C896</color>
+    <color name="colorError">#FF4757</color>
+    <color name="colorWarning">#FFB347</color>
+
+    <!-- UI Components -->
+    <color name="editTextBg">#F5F8FF</color>
+    <color name="editTextStroke">#C8D8F0</color>
+    <color name="dividerColor">#E0E8F5</color>
+    <color name="rippleColor">#331A5FD4</color>
+
+    <!-- Logout / Danger -->
+    <color name="colorLogout">#FF4757</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="semiTransparent">#80000000</color>
+    <color name="overlayDark">#CC060E1A</color>
+</resources>
